@@ -1,0 +1,35 @@
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.perfil ion-avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
+  border: 3px solid var(--ion-color-primary);
+}
+
+.perfil h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.perfil p {
+  color: var(--ion-color-medium);
+  margin-top: 4px;
+}
+
+ion-card {
+  margin: 16px 0;
+  border-radius: 14px;
+}
+
+ion-chip {
+  margin: 4px;
+}

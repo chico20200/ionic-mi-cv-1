@@ -1,0 +1,85 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mi experiencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Experiencia profesional</h2>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Desarrollo y soporte tecnológico</ion-card-subtitle>
+      <ion-card-title>Ermática</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        Participación en la configuración, personalización y
+        automatización de procesos empresariales utilizando
+        herramientas del ecosistema Zoho.
+      </p>
+
+      <ion-chip color="primary">Zoho CRM</ion-chip>
+      <ion-chip color="tertiary">Deluge</ion-chip>
+      <ion-chip color="success">Integraciones API</ion-chip>
+
+      <ion-button
+        expand="block"
+        (click)="mostrarFunciones = !mostrarFunciones"
+      >
+        {{ mostrarFunciones ? 'Ocultar funciones' : 'Ver funciones realizadas' }}
+      </ion-button>
+
+      <div *ngIf="mostrarFunciones">
+        <ion-list>
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline"
+              slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              Configuración de módulos, campos y workflows en Zoho CRM.
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline"
+              slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              Desarrollo de funciones y automatizaciones con Deluge.
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline"
+              slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              Integraciones entre aplicaciones mediante API.
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline"
+              slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              Administración y seguimiento de tickets en Zoho Desk.
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Otras competencias</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        Análisis de problemas, aprendizaje continuo,
+        trabajo colaborativo y comunicación efectiva.
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
